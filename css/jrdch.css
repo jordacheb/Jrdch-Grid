@@ -1,0 +1,70 @@
+/*
+* Minimal Responsive CSS Grid
+* Versão 1.0
+* Data: 24/10/2017
+* Autor: Jordache B.
+* Empresa: 2AHEAD
+* Site: http://www.2ahead.com.br
+*/
+/*
+	Grid System
+*/
+#jrdch .g-block-group,
+#jrdch .g-block,
+#jrdch .g-block-group:after,
+#jrdch .g-block:after,
+#jrdch .g-block-group:before,
+#jrdch .g-block:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#jrdch .g-block-group{*zoom:1}
+#jrdch .g-block-group:before,
+#jrdch .g-block-group:after{display:table;content:"";line-height:0}
+#jrdch .g-block-group:after{clear:both}
+#jrdch .g-block-group{list-style-type:none;padding:0;margin:0}
+#jrdch .g-block-group > #jrdch .g-block-group{clear:none;float:left;margin:0 !important}
+#jrdch .g-block{float:left;width:100%}
+
+#jrdch .col-20 {width: 20%;}
+#jrdch .col-25 {width: 25%;}
+#jrdch .col-30 {width: 33.33%;}
+#jrdch .col-40 {width: 40%;}
+#jrdch .col-50 {width: 50%;}
+#jrdch .col-60 {width: 60%;}
+#jrdch .col-70 {width: 66.66%;}
+#jrdch .col-80 {width: 80%;}
+
+#jrdch .col-20,
+#jrdch .col-25,
+#jrdch .col-30,
+#jrdch .col-40,
+#jrdch .col-50,
+#jrdch .col-60,
+#jrdch .col-70,
+#jrdch .col-80 {padding: 0 20px;}
+
+#jrdch .npl {padding-left: 0;}
+#jrdch .npr {padding-right: 0;}
+
+/*
+	Globals
+*/
+#jrdch-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+}
+#jrdch .fl {float: left;}
+#jrdch .fr {float: right;}
+#jrdch .clr {clear: both;}
+#jrdch .txt-c {text-align: center;}
+#jrdch .txt-r {text-align: right;}
+#jrdch .txt-j {text-align: justify;}
+
+#jrdch .mb-20 {margin-bottom: 20px;}
+#jrdch .mb-30 {margin-bottom: 30px;}
+#jrdch .mb-50 {margin-bottom: 50px;}
+#jrdch .mb-100 {margin-bottom: 100px !important;}
+#jrdch .divider50 {
+		margin: 50px 0 50px 10px;
+		height: 1px;
+		border-top:1px solid #ccc;
+}

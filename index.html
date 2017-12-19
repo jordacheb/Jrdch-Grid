@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimal Responsive CSS Grid - Usage</title>
+
+	<link rel="stylesheet" href="css/jrdch.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="jrdch">
+	<!-- Define the block that will use the minimal responsive grid in case you use it with another grid system -->
+		<div id="jrdch-wrapper">
+		<!-- Define the width of the main wrapper -->
+			<div class="g-block-group">
+				<div class="g-block">
+					<h1>Minimal Responsive CSS Grid</h1>
+					<h3>Usage guide</h3>
+					<hr>
+				</div>
+			</div>
+			<div class="g-block-group">
+				<div class="g-block">
+					<h2>Layout</h2>
+					<p>There is an ID <code>#jrdch</code> that is used to encapsulate the code in case you put it inner a existing estructure in order to avoid conflict.</p>
+
+					<p>Control the page width by changing <code>#jrdch-wrapper</code> width in CSS.</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-50">
+				<div class="g-block code-block">
+					<code>
+						&lt;body&gt;<br>
+						&nbsp;&nbsp;&lt;div id="<span class="myclass">jrdch</span>"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="<span class="myclass">jrdch-wrapper</span>"><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mycontent">...here goes the grid...</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/body&gt;
+					</code>
+				</div>
+			</div>
+			<div class="g-block-group">
+				<div class="g-block">
+					<h2>Grid</h2>
+					<p>The basic structure uses a div <code>.g-block-group</code> to define a row where you can set a <code>.g-block</code> div with 100% width or more divs like <code>.col-20</code> where the number 20 stands for the % of the column width in CSS.</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-50">
+				<div class="g-block code-block">
+					<code>
+						&lt;div class="<span class="myclass">g-block-group</span>"&gt;<br>
+						&nbsp;&nbsp;&lt;div class="<span class="myclass">g-block col-20</span>"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="mycontent">...content in a 20% width column...</span><br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;div class="<span class="myclass">g-block col-80</span>"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span class="mycontent">...content in a 80% width column...</span><br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						&lt;/div&gt;
+					</code>
+				</div>
+			</div>
+			<div class="g-block-group mb-20">
+				<div class="g-block">
+					<h2>Grid Exemple</h2>
+				</div>
+				<div class="g-block col-20 grid-show">
+					<p> .col-20</p>
+				</div>
+				<div class="g-block col-80 grid-show">
+					<p> .col-80</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-20">
+				<div class="g-block col-25 grid-show">
+					<p> .col-25</p>
+				</div>
+				<div class="g-block col-25 grid-show">
+					<p> .col-25</p>
+				</div>
+				<div class="g-block col-25 grid-show">
+					<p> .col-25</p>
+				</div>
+				<div class="g-block col-25 grid-show">
+					<p> .col-25</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-20">
+				<div class="g-block col-30 grid-show">
+					<p> .col-30</p>
+				</div>
+				<div class="g-block col-30 grid-show">
+					<p> .col-30</p>
+				</div>
+				<div class="g-block col-30 grid-show">
+					<p> .col-30</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-20">
+				<div class="g-block col-50 grid-show">
+					<p> .col-50</p>
+				</div>
+				<div class="g-block col-50 grid-show">
+					<p> .col-50</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-20">
+				<div class="g-block col-60 grid-show">
+					<p> .col-60</p>
+				</div>
+				<div class="g-block col-40 grid-show">
+					<p> .col-40</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-50">
+				<div class="g-block grid-show">
+					<p> for 100% width no .col-* needed</p>
+				</div>
+			</div>
+			<div class="g-block-group">
+				<div class="g-block">
+					<h2>Helper Classes</h2>
+				</div>
+				<div class="g-block">
+					<h3>No padding left / No padding right</h3>
+					<p>Every column has a <code>20px</code> padding in it's sides. If you need to remove it simply use one of these classes:</p>
+				</div>
+			</div>
+			<div class="g-block-group mb-50">
+				<div class="g-block code-block">
+					<code>
+						<span class="myclass">.npl</span> {<br>
+						&nbsp;&nbsp;padding-left: 0;<br>
+						}<br>
+						<span class="myclass">.npr</span> {<br>
+						&nbsp;&nbsp;padding-right: 0;<br>
+						}<br>
+					</code>
+				</div>
+			</div>
+		</div><!--/ jrdch-wrapper -->
+	</div><!--/ jrdch -->
+</body>
+</html>

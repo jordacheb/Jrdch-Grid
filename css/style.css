@@ -1,0 +1,50 @@
+/*
+* Minimal Responsive CSS Style 
+* Versão 1.0
+* Data: 18/12/2017
+* Autor: Jordache B.
+* Empresa: 2AHEAD
+* Site: http://www.2ahead.com.br
+*/
+/* Globals */
+body {
+	font: normal 16px/20px 'sans-serif', Helvetica, Arial;
+	color: #434343;
+}
+hr {
+	border: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+/* Code Block */
+code {
+    padding: 1px 4px;
+    font-size: 15px;
+    color: #1880d0;
+    background: #f3f3f3;
+    border-radius: 4px;
+}
+.code-block {
+	padding: 15px 20px;
+	background: #2d2d46;
+}
+.code-block code {
+	padding: 0;
+	color: #33cbce;
+	background: none;
+}
+span.myclass {
+	color: #ff8122;
+}
+span.mycontent {
+	color: #ddd;
+}
+
+/* Grid Show */
+.grid-show {
+	padding: 15px 20px;
+	background: #f5f5f5;
+	border: 1px solid #eee;
+}
